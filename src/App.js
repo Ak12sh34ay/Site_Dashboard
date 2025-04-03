@@ -24,7 +24,6 @@ import Home from "./pages/Dashboard/Home.jsx";
 // import { useState } from "react";
 import NewProjects from "./components/Projects/NewProjects.jsx";
 import TakenProjects from "./components/Projects/TakenProjects.jsx";
-import ProjectRequirment from "./components/Projects/ProjectRequirment.jsx";
 import WeeklyWorkUpdate from "./components/Projects/WeeklyWorkUpdate.jsx";
 import ViewWeeklyWork from "./components/Projects/ViewWeeklyWork.jsx";
 //Examples
@@ -38,6 +37,7 @@ import Addworkupdate from "./components/WorkUpdate/Addworkupdate.jsx";
 import IssueApproval from "./components/IssueApproval/IssueApproval.jsx";
 import AddMaterialRequest from "./components/MaterialRequests/AddMaterialRequest.jsx";
 import ViewMaterialRequest from "./components/MaterialRequests/ViewMaterialRequest.jsx";
+// import BasicTableOne from "./components/tables/BasicTables/BasicTableOne.jsx";
 
 // import './App.css'
 
@@ -54,12 +54,12 @@ export default function App() {
             {/* {Projects} */}
             <Route path="/new_projects" element={<NewProjects />} />
             <Route path="/taken_projects" element={<TakenProjects />} />
-            <Route
-              path="/project_requirement"
-              element={<ProjectRequirment />}
-            />
+          
             <Route path="/weekwork" element={<WeeklyWorkUpdate />} />
             <Route path="/view_weekly_work" element={<ViewWeeklyWork />} />
+
+            {/* <Route path="/basic_tables" element={<BasicTableOne />} /> */}
+            {/* <Route path="/tables" element={<BasicTables/>}/> */}
 
             {/* {Projects} */}
             {/* <Route path="/first_cmpt" element={<FirstComponent />} />
